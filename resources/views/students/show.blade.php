@@ -2,22 +2,22 @@
 
 @section('content')
     <div class="bg-white rounded-xl shadow-md p-8 text-center max-w-2xl mx-auto">
-        <img src="{{ $student['foto'] }}" alt="{{ $student['nama'] }}" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+        <img src="{{ $students['foto'] }}" alt="{{ $students['nama'] }}" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
 
         <p class="text-gray-500 text-sm mb-1">
-            @{{ $student['username'] }}
+            @{{ $students['username'] }}
         </p>
 
         <h2 class="text-2xl font-semibold mb-1">
-            {{ $student['nama'] }} ✍️
+            {{ $students['nama'] }} ✍️
         </h2>
 
         <p class="text-gray-600 font-medium mb-1">
-            {{ $student['kelas'] }} | {{ $student['hobi'] }}
+            {{ $students['kelas'] }} | {{ $students['hobi'] }}
         </p>
 
         <p class="text-gray-700 mt-2 mb-6">
-            {{ $student['deskripsi'] }}
+            {{ $students['deskripsi'] }}
         </p>
 
         <div class="flex justify-center gap-4">

@@ -1,5 +1,4 @@
-use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\StudentController;
+
 @extends('layouts.app')
 
 @section('content')

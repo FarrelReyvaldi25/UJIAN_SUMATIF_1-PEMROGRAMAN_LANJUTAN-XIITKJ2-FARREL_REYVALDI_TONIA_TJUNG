@@ -1,16 +1,17 @@
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\StudentController;
 @extends('layouts.app')
 
 @section('content')
-    <h1 class="text-3xl font-bold mb-6">Daftar Siswa</h1>
+    <h1 class="text-2xl font-bold mb-4">Daftar Siswa</h1>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
-        @foreach ($students)
-            <x-student-card
-                :nama="$students['nama']"
-                :username="$students['username']"
-                :deskripsi="$students['deskripsi']"
-                :foto="$students['foto']"
-            />
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        @foreach($students as $student)
+            <div class="bg-white shadow-md rounded p-4">
+                <h2 class="font-semibold">{{ $student['nama'] }}</h2>
+                <p class="text-gray-500">{{ '@'.$student['username'] }}</p>
+                <p>{{ $student['deskripsi'] }}</p>
+            </div>
         @endforeach
     </div>
 @endsection

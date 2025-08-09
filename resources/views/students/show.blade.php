@@ -3,7 +3,6 @@
 @section('content')
     <div class="bg-white p-8 rounded-xl shadow-md text-center">
         <img src="{{ $student['foto'] }}" alt="{{ $student['nama'] }}" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
-        <p class="text-gray-500 text-sm">@{{ $student['username'] }}</p>
         <h2 class="text-2xl font-bold">{{ $student['nama'] }}</h2>
         <p class="text-gray-600">{{ $student['kelas'] }} | {{ $student['hobi'] }}</p>
         <p class="mt-4">{{ $student['deskripsi'] }}</p>
